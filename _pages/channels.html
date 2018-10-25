@@ -8,6 +8,6 @@ permalink: /channels/
 {% assign channels = site.channels | sort: 'name' %}
 {% for channel in channels %}
     <div>
-        {{channel.name}}
+        <a href="/channels/{{channel.slug}}">{{channel.name}}</a>
     </div>
 {% endfor %}
