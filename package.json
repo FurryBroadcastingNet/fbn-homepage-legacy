@@ -1,0 +1,23 @@
+{
+  "name": "furrybroadcasting.stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery-countdown": "^2.2.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furrybroadcastingnetwork/channel-site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/furrybroadcastingnetwork/channel-site/issues"
+  },
+  "homepage": "https://github.com/furrybroadcastingnetwork/channel-site#readme"
+}

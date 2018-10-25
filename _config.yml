@@ -1,0 +1,27 @@
+
+markdown: kramdown
+exclude:
+  - .idea
+include:
+  - _pages
+plugins:
+  - jekyll-feed
+
+collections_dir: collections
+collections:
+  channels:
+    output: true
+    permalink: /channels/:slug
+
+defaults:
+  - scope:
+      path: ""
+      type: channels
+    values:
+      layout: channel
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+  style: compressed

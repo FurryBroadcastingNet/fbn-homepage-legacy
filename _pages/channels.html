@@ -1,0 +1,13 @@
+---
+layout: default
+title: Channels
+permalink: /channels/
+---
+<p>Channels</p>
+
+{% assign channels = site.channels | sort: 'name' %}
+{% for channel in channels %}
+    <div>
+        {{channel.name}}
+    </div>
+{% endfor %}

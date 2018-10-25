@@ -1,0 +1,13 @@
+body.channel {
+  background: #22252f url('https://radio.furrybroadcasting.net/static/img/hexbg_dark.png');
+  background-size: cover;
+}
+
+.channel-frame {
+  background-color: #242731;
+
+  iframe {
+    margin-top: 2em;
+    width: 100%;
+  }
+}
