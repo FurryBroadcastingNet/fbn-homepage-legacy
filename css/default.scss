@@ -1,8 +1,11 @@
 ---
 ---
 
+@import '../_sass/_variables.scss';
 @import 'bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'slick-carousel/slick/slick';
+@import 'slick-carousel/slick/slick-theme';
 @import '../_sass/default';
 @import '../_sass/style';
 @import '../_sass/radio';
+@import '../_sass/store';
