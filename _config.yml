@@ -14,7 +14,7 @@ collections:
     permalink: /channels/:slug
   faq:
     output: false
-  sponsors:
+  friends:
     output: false
   staff:
     output: false
