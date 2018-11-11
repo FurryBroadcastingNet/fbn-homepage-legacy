@@ -1,0 +1,42 @@
+---
+layout: default
+title: FAQ
+permalink: /faq/
+---
+
+<section id="mu-faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-faq-area">
+                    <div class="mu-title-area">
+                        <h2 class="mu-title">FAQ</h2>
+                        <p>Frequently Asked Questions</p>
+                    </div>
+                    <div class="mu-faq-content">
+                        <div class="panel-group" id="accordion">
+
+                            {% assign questions = site.faq | sort: 'order' %}
+                            {% for question in questions %}
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ question.order }}" {% if question.order == 0 %} aria-expanded="true" {% endif %}>
+                                            <span class="fa fa-angle-down"></span> {{ question.question }}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-{{ question.order }}" class="panel-collapse collapse {% if question.order == 0 %} in {% endif %}">
+                                    <div class="panel-body">
+                                        {{ question.answer }}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

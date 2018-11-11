@@ -1,0 +1,44 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+<section id="mu-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-contact-area">
+
+                    <div class="mu-title-area">
+                        <h2 class="mu-heading-title">Contact Us</h2>
+                        <p>Send us an email to get in touch with our team about sponsorships or any other information.</p>
+                    </div>
+                    <div class="mu-contact-content">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="mu-contact-form-area">
+                                    <div id="form-messages"></div>
+                                    <form name="contact" method="post" netlify class="mu-contact-form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                                        </div>
+                                        <div data-netlify-recaptcha></div>
+                                        <button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
