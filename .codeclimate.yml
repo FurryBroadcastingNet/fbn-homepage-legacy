@@ -5,5 +5,10 @@ plugins:
     enabled: true
   scss-lint:
     enabled: true
+    checks:
+      ColorVariable:
+        enabled: false
+      UrlFormat:
+        enabled: false
   eslint:
     enabled: true
