@@ -1,13 +1,32 @@
-body.channel {
+.channel {
   background: #22252f url('https://radio.furrybroadcasting.net/static/img/hexbg_dark.png');
   background-size: cover;
+  min-height: 800px;
+  padding-top: 1em;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+  }
 }
 
 .channel-frame {
   background-color: #242731;
 
   iframe {
+    border: none;
     margin-top: 2em;
+    height: 100px;
     width: 100%;
   }
+}
+
+.channel-list {
+  text-align: center;
+}
+
+.chnanel-list-icon {
+  color: #2b542c;
+  height: 50px;
+  width: 50px;
 }

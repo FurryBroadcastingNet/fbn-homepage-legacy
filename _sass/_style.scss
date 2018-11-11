@@ -34,6 +34,7 @@ Version: 1.0
 body,
 html {
   overflow-x:hidden;
+  padding-top: 30px;
 }
 
 body {
@@ -1754,7 +1755,6 @@ button:focus {
 
 
 @media (max-width: 320px) {
-
   .mu-video-iframe-area {
     padding: 30% 5%;
   }
@@ -1769,7 +1769,4 @@ button:focus {
   h2 {
     font-size: 22px;
   }
-
-
-
 }
