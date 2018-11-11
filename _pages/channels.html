@@ -3,11 +3,18 @@ layout: default
 title: Channels
 permalink: /channels/
 ---
-<p>Channels</p>
-
+<div class="flex-row">
 {% assign channels = site.channels | sort: 'name' %}
 {% for channel in channels %}
-    <div>
-        <a href="/channels/{{channel.slug}}">{{channel.name}}</a>
+    <div class="col-md-4">
+        <div class="channel-list">
+            <div class="channel-list-icon"></div>
+            <div class="channel-list-name">
+                <a href="/channels/{{channel.slug}}">
+                    {{channel.name}}
+                </a>
+            </div>
+        </div>
     </div>
 {% endfor %}
+</div>
