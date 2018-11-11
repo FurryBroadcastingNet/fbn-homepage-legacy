@@ -28,7 +28,7 @@ permalink: /faq/
                                 </div>
                                 <div id="collapse-{{ question.order }}" class="panel-collapse collapse {% if question.order == 0 %} in {% endif %}">
                                     <div class="panel-body">
-                                        {{ question.answer }}
+                                        {{ question.content | markdownify }}
                                     </div>
                                 </div>
                             </div>
