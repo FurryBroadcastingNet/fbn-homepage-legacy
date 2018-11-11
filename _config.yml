@@ -12,6 +12,12 @@ collections:
   channels:
     output: true
     permalink: /channels/:slug
+  faq:
+    output: false
+  friends:
+    output: false
+  staff:
+    output: false
 
 defaults:
   - scope:

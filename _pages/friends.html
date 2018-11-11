@@ -1,0 +1,32 @@
+---
+layout: default
+title: Friends
+permalink: /friends/
+---
+
+<section id="mu-sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-sponsors-area">
+                    <div class="mu-title-area">
+                        <h2 class="mu-title">Our Friends</h2>
+                        <p>Checkout our friends and show them some <span><i class="fa fa-heart"></i></span></p>
+                    </div>
+                    <div class="mu-sponsors-content">
+                        <div class="row">
+                            {% assign friends = site.friends | sort: 'order' %}
+                            {% for friend in friends %}
+                                <div class="col-md-2 col-sm-4 col-xs-4">
+                                    <div class="mu-sponsors-single">
+                                        <img src="/assets/images/friends/{{ friend.logo }}" alt="{{ friend.name }}">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
