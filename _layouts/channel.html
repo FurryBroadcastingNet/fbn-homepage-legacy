@@ -14,4 +14,19 @@ layout: default
         </div>
         <div class="col-md-3"></div>
     </div>
+    <div class="row channel-social">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            {% if page.social.twitter %}
+                <a href="https://www.twitter.com/{{ page.social.twitter }}">Twitter</a>
+            {% endif %}
+            {% if page.social.facebook %}
+                <a href="https://www.facebook.com/{{ page.social.facebook }}">Facebook</a>
+            {% endif %}
+            {% if page.social.instagram %}
+                <a href="https://www.instagram.com/{{ page.social.instagram }}">Instagram</a>
+            {% endif %}
+        </div>
+        <div class="col-md-3"></div>
+    </div>
 </div>
