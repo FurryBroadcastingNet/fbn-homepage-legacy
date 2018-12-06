@@ -4,10 +4,13 @@
   <body>
     {% include header.html %}
     <main role="main">
+      {% if page.banner != false %}
+        {% include ad.html zoneid="2" %}
+      {% endif %}
       {{ content }}
     </main>
 
-    {% include ad.html %}
+    {% include ad.html zoneid="1" %}
     {% include footer.html %}
   </body>
 </html>
