@@ -1,10 +1,116 @@
----
-layout: default
-title: FAQ
-permalink: /faq/
----
+<!DOCTYPE html>
+<html>
+  
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furry Broadcasting Network</title>
+    <link rel="shortcut icon" type="image/icon" href="../assets/images/RevisedFBNLogo.png"/>
+    <link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/default420c.css?v=2018-11-18%2005:15:49%20+0000">
+    <script async src="../../code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/component.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-<section id="mu-faq">
+</head>
+  <body>
+  <header id="mu-hero" class="" role="banner">
+  
+    <nav class="navbar navbar-fixed-top navbar-default ">
+        <div class="container">
+           
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+             <a class="navbar-brand" href="index-2.html">FBN</a>
+
+            </div>  
+
+
+
+<div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+                <li style="padding-top: 10px !important; padding-left: 5px !important;">
+                    <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                    <nav class="gn-menu-wrapper">
+                        <div class="gn-scroller">
+                            <ul class="gn-menu">
+                                <li class="gn-search-item">
+                                    <input placeholder="Search" type="search" class="gn-search">
+                                    <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                    <ul class="gn-submenu">
+                                        <li><a href="about/about.html">About Us</a></li>
+                                        <li><a href="faq/faq.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <ul class="gn-submenu">
+                                <li><a href="staff/staff.html">Staff</a></li>
+                                <li><a href="friends/friends.html">Friends</a></li>
+                            </ul>
+                                <li>
+                                    <a href="https://furrybroadcasting.stream/">FBN Stream</a>
+                                    <ul class="gn-submenu">
+                                        <li><a href="contact/contact.html">Contact</a></li>
+                                        <li><a href="store/store.html">FBN Store</a></li>
+                                        <li><a href="https://radio.furrybroadcasting.net/public/paw_print_radio">Paw Print Radio</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /gn-scroller -->
+                    </nav>
+                </li>
+                <!--<li><a href="http://tympanus.net/codrops">Codrops</a></li> -->
+                <li>
+
+             <a class="navbar-brand" href="index-2.html">FBN</a></li>
+                <!--<li><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16030"><span>Back to the Codrops Article</span></a></li>-->
+            </ul>
+            
+        </div>
+
+        <!-- /container -->
+
+
+
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav mu-menu navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about/index.html">About Us</a></li>
+                    <li><a href="staff/index.html">Staff</a></li>
+                    <li><a href="faq/index.html">FAQ</a></li>
+                    <li><a href="friends/index.html">Friends</a></li>
+                    <li><a href="contact/index.html">Contact</a></li>
+                    <li><a href="https://furrybroadcasting.stream/">FBN Stream</a></li>
+                    <li><a href="store/index.html">FBN Store</a></li>
+                    <li><a href="https://radio.furrybroadcasting.net/public/paw_print_radio">Paw Print Radio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+      --> 
+
+
+</header>
+
+    <main role="main">
+      <section id="mu-faq">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -16,23 +122,88 @@ permalink: /faq/
                     <div class="mu-faq-content">
                         <div class="panel-group" id="accordion">
 
-                            {% assign questions = site.faq | sort: 'order' %}
-                            {% for question in questions %}
+                            
+                            
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ question.order }}" {% if question.order == 0 %} aria-expanded="true" {% endif %}>
-                                            <span class="fa fa-angle-down"></span> {{ question.question }}
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-0"  aria-expanded="true" >
+                                            <span class="fa fa-angle-down"></span> What is Furry Broadcasting Network (FBN)?
                                         </a>
                                     </h4>
                                 </div>
-                                <div id="collapse-{{ question.order }}" class="panel-collapse collapse {% if question.order == 0 %} in {% endif %}">
+                                <div id="collapse-0" class="panel-collapse collapse  in ">
                                     <div class="panel-body">
-                                        {{ question.content | markdownify }}
+                                        <p>We’re a collective of artists, musicians, and gamers who want to do our best to help other members of the furry community.</p>
+
                                     </div>
                                 </div>
                             </div>
-                            {% endfor %}
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" >
+                                            <span class="fa fa-angle-down"></span> How do I contact for more information?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-1" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        <p>We’re a collective of artists, musicians, and gamers who want to do our best to help other members of the furry community.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" >
+                                            <span class="fa fa-angle-down"></span> How do I submit my work to be featured?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-2" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        <p>Please send your request to info@furrybroadcasting.net with the subject of “Request to be featured”. It will take up to 3 business days to send you an email back saying if you have been approved or denied. If denied we will tell you what is wrong and you can send us another email with the corrected issue.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" >
+                                            <span class="fa fa-angle-down"></span> How do I become a partner?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-3" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        <p>Send us an email to info@furrybroadcasting.net with the title “Become a partner”. Within 3 days you will have an email back with either or accept or reject along with further instructions.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" >
+                                            <span class="fa fa-angle-down"></span> How do I apply for staff?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse-4" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        <p>Please click the following link, Apply for FBN Staff Position . Only apply if you have time available to dedicate to tasks issued to you. All our staff are volunteers, so we wont take over your life but we do expect that things be done in some kind of time frame.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -40,3 +211,67 @@ permalink: /faq/
         </div>
     </div>
 </section>
+    </main>
+
+    <div class="text-center">
+    <ins data-revive-zoneid="1" data-revive-block="1" data-revive-blockcampaign="1" data-revive-target="_blank" data-revive-id="c32f250ccae3afc0e65b0e1c094407b5"></ins>
+    <script async src="http://reviveadserver.furrybroadcasting.net/fbn/embedjs.php"></script>
+</div>
+    <footer id="mu-footer" role="contentinfo">
+    <div class="container">
+        <div class="mu-footer-area">
+            <div class="mu-footer-top">
+                <div class="mu-social-media">
+                    <a href="https://www.facebook.com/FurryBroadcastNet/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/FurBroadcastNet" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="mu-footer-bottom">
+                <p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="../index.html">Furry Broadcasting Network LLC</a>. All right reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- End footer -->
+
+
+
+<!-- jQuery library -->
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Bootstrap -->
+<script src="../node_modules/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<!-- Slick slider -->
+<script type="text/javascript" src="../node_modules/slick-carousel/slick/slick.js"></script>
+<!-- Event Counter -->
+<script type="text/javascript" src="../node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<!-- Ajax contact form  -->
+<script type="text/javascript" src="../assets/js/app.js"></script>
+
+
+
+<!-- Custom js -->
+<script type="text/javascript" src="../assets/js/custom.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73807676-2"></script>
+<script src="../js/classie.js"></script>
+        <script src="../js/gnmenu.js"></script>
+        <script>
+            new gnMenu( document.getElementById( 'gn-menu' ) );
+        </script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-73807676-2');
+</script>
+
+  </body>
+
+</html>
