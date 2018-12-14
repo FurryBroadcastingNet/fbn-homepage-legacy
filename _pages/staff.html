@@ -8,30 +8,31 @@ permalink: /staff/
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="mu-speakers-area">
-                    <div class="mu-title-area">
-                        <h2 class="mu-title">Our Staff</h2>
-                        <p>Our staff is made up of 100% volunteers that want to see the community grow and thrive. If you would like to be considered apart of our staff just drop us a line.</p>
-                    </div>
-                    <div class="mu-speakers-content">
-                        <div class="mu-speakers-slider">
-                            {% assign members = site.staff | sort: 'order' %}
-                            {% for member in members %}
-                                <div class="mu-single-speakers">
-                                    <img src="/assets/images/staff/{{ member.icon }}" alt="speaker img" style="width:300px;height:270px;">
-                                    <div class="mu-single-speakers-info">
-                                        <h3>{{ member.name }}</h3>
-                                        <p>{{ member.position }}</p>
-                                        <ul class="mu-single-speakers-social">
-                                            {% if member.sites.fa %}
-                                                <li><a href="https://www.furaffinity.net/user/{{ member.sites.fa }}/" target="_blank"><i class="fa fa-globe"></i></a></li>
-                                            {% endif %}
-                                        </ul>
-                                    </div>
-                                </div>
-                            {% endfor %}
+                <div class="mu-title-area">
+                    <h2 class="mu-title">Our Staff</h2>
+                    <p>Our staff is made up of 100% volunteers that want to see the community grow and thrive. If you would like to be considered apart of our staff just drop us a line.</p>
+                </div>
+                <div class="row flex-row">
+                    {% assign members = site.staff | sort: 'order' %}
+                    {% for member in members %}
+                        <div class="col-md-3 staff">
+                            {% if member.icon %}
+                                <img src="/assets/images/staff/{{ member.icon }}" alt="speaker img">
+                            {% endif %}
+                            {% if member.gravatar %}
+                                <img src="https://www.gravatar.com/avatar/{{ member.gravatar }}?s=300" />
+                            {% endif %}
+                            <div class="staff-info">
+                                <h3>{{ member.name }}</h3>
+                                <p>{{ member.position }}</p>
+                                <ul class="mu-single-speakers-social">
+                                    {% if member.sites.fa %}
+                                        <li><a href="https://www.furaffinity.net/user/{{ member.sites.fa }}/" target="_blank"><i class="fa fa-globe"></i></a></li>
+                                    {% endif %}
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
 </section>
