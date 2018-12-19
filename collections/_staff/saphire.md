@@ -1,6 +1,6 @@
 ---
 name: Saphire
 position: Public Relations
-icon:
-order:
+icon: saphire.png
+order: 3
 ---
