@@ -15,7 +15,6 @@
 
 Run `bundle exec jekyll serve`
 
-
 ## Adding People To Staff List
 
 Information Needed:
