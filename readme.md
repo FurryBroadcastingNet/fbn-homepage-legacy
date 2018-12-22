@@ -14,3 +14,17 @@
 ## Running
 
 Run `bundle exec jekyll serve`
+
+## Adding People To Staff List
+
+Information Needed:
+
+- Profile picture, 300x300px (or gravatar image hash)
+- Name
+- Title
+
+Optional:
+
+- FurAffinity
+- Twitter
+- Telegram

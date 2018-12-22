@@ -1,8 +1,8 @@
 ---
 name: Shadow LeRawr
 position: Founder
-icon: ShadowLeRawr.png
-order: 0
+icon: shadowlerawr.png
+order: 1
 sites:
     fa: agentshadowpony
 ---

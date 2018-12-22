@@ -1,8 +1,8 @@
 ---
 name: Violet The Dutchie
 position: Staff - Head of Public Relations
-icon: violet.jpeg
-order: 3
+icon: violet.png
+order: 2
 sites:
     fa: violetrose91
 ---
