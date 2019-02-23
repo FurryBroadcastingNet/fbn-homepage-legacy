@@ -5,7 +5,7 @@
   "main": "",
   "dependencies": {},
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.1",
     "jquery-countdown": "^2.2.0",
     "slick-carousel": "^1.8.1"
   },
