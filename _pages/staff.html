@@ -26,7 +26,7 @@ permalink: /staff/
                         <div class="staff-info">
                             <h3>{{ member.name }}</h3>
                             <p>{{ member.position }}</p>
-                            {% if member.content %}
+                            {% if member.content and true == false %}
                             <div class="bio">
                                 {{ member.content }}
                             </div>
@@ -35,6 +35,10 @@ permalink: /staff/
                                 {% if member.sites.fa %}
                                 <li><a href="https://www.furaffinity.net/user/{{ member.sites.fa }}/" target="_blank"><i
                                             class="fa fa-globe"></i></a></li>
+                                {% endif %}{% if member.sites.twitter %}
+                                <li><a href="https://twitter.com/{{ member.sites.twitter }}/" target="_blank"><i
+                                            class="fa fa-twitter"></i></a>
+                                </li>
                                 {% endif %}
                             </ul>
                         </div>
