@@ -214,7 +214,7 @@
 
 function checkform() {
 	re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-	if (!(re.test(jQuery("#email1").val()))) {
+	if (!(re.test(jQuery("#email").val()))) {
 			jQuery("#result").empty().append("Please enter a valid email address");
 			jQuery("#email").focus();
 			return false;
