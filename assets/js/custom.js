@@ -227,7 +227,7 @@ function checkform() {
 }
 function submitForm() {
 	successMessage = 'Thank you for your registration. Please check your email to confirm.';
-	data = jQuery('#email').serialize();
+	data = "email=" + encodeURIComponent($("#email").val())
 	jQuery.ajax( {
 			type: 'POST',
 			data: data,
