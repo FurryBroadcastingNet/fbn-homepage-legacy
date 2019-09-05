@@ -14,6 +14,7 @@
 	5. SPEAKERS SLIDEER ( SLICK SLIDER )
 	6. BOOTSTRAP ACCORDION
 	7. MOBILE MENU CLOSE
+	8. NEWSLETTER SIGNUP
 
 
 **/
@@ -205,9 +206,38 @@
 	});
 
 
-
-
-
-
-
 })( jQuery );
+
+/* ----------------------------------------------------------- */
+/*  8. NEWSLETTER SIGNUP
+/* ----------------------------------------------------------- */
+
+function checkform() {
+	re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if (!(re.test(jQuery("#email").val()))) {
+			jQuery("#result").empty().append("Please enter a valid email address");
+			jQuery("#email").focus();
+			return false;
+	}
+	if (!(jQuery("#email").val() == jQuery("#email2").val())) {
+			jQuery("#result").empty().append("Email addresses do not match, please double check");
+			return false;
+	}
+	return true;
+}
+function submitForm() {
+	successMessage = 'Thank you for your registration. Please check your email to confirm.';
+	data = "email=" + encodeURIComponent($("#email").val())
+	jQuery.ajax( {
+			type: 'POST',
+			data: data,
+			dataType: 'html',
+			url: 'https://newsletter.furrybroadcasting.net/?p=asubscribe',
+			success: function (data, status, request) {
+					jQuery("#result").empty().append(data != '' ? data : successMessage);
+					jQuery('#email').val('');
+					jQuery('#email2').val('');
+			},
+			error: function (request, status, error) { alert('Sorry, we were unable to process your subscription.'); }
+	});
+}
