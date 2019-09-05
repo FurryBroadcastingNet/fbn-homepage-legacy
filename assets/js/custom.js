@@ -232,7 +232,7 @@ function submitForm() {
 			type: 'POST',
 			data: data,
 			dataType: 'html',
-			url: 'http://newsletter.furrybroadcasting.net/?p=asubscribe',
+			url: 'https://newsletter.furrybroadcasting.net/?p=asubscribe',
 			success: function (data, status, request) {
 					jQuery("#result").empty().append(data != '' ? data : successMessage);
 					jQuery('#email').val('');
