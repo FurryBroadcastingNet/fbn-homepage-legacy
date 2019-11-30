@@ -117,8 +117,8 @@ code {
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #eee;
+  background-color: #474747;
+  border: 1px solid #474747;
   border-radius: 4px;
   padding: 10px;
 }
@@ -356,8 +356,8 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
-  background-color: #fff;
-  border-color: #e7e7e7;
+  background-color: #474747;
+  border-color: #474747;
   padding: 5px 0;
 }
 
@@ -377,7 +377,7 @@ button:focus {
 }
 
 .mu-navbar .mu-menu li a {
-  color: #333;
+  color: #fff;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -389,6 +389,10 @@ button:focus {
   color: #fff;
 }
 
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ff8000;
+}
+
 
 
 /*--------------------*/
@@ -397,7 +401,7 @@ button:focus {
 
 
 #mu-about {
-  background-color: #fff;
+  background-color: #635c5c ;
   display: inline;
   float: left;
   width: 100%;
@@ -716,7 +720,7 @@ button:focus {
 
 
 #mu-speakers {
-  background-color: #fff;
+  background-color: #635c5c ;
   display: inline;
   float: left;
   width: 100%;
@@ -873,7 +877,7 @@ button:focus {
 }
 
 .mu-single-price {
-  background-color: #f8f8f8;
+  background-color: #474747;
   display: inline;
   float: left;
   text-align: center;
@@ -1063,7 +1067,7 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-  background-color: #fff;
+  background-color: #635c5c;
   display: inline;
   float: left;
   width: 100%;
@@ -1098,7 +1102,7 @@ button:focus {
 /*--------------------*/
 
 #mu-faq {
-  background-color: #f8f8f8;
+  background-color: #635c5c ;
   display: inline;
   float: left;
   position: relative;
@@ -1157,13 +1161,12 @@ button:focus {
   margin-right: 5px;
 }
 
-
 /*--------------------*/
 /* CONTACT US */
 /*--------------------*/
 
 #mu-contact {
-  background-color: #f8f8f8;
+  background-color: #635c5c;
   display: inline;
   float: left;
   width: 100%;
@@ -1291,7 +1294,7 @@ button:focus {
 
 
 #mu-footer {
-  background-color: #f8f8f8;
+  background-color: #474747;
   display: inline;
   float: left;
   width: 100%;
