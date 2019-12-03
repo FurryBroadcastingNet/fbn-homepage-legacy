@@ -26,6 +26,23 @@ Version: 1.0
 #RESPONSIVE STYLE
 */
 
+:root {
+  --primary-color: #302AE6;
+  --bg-color-area: #fff
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #474747;
+  --bg-color-area: #635c5c;
+  --heading-color: #818cab;
+}
 
 /*--------------------*/
 /* BASIC TYPOGRAPHY */
@@ -356,7 +373,7 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
-  background-color: #474747;
+  background-color: var(--bg-color);
   border-color: #474747;
   padding: 5px 0;
 }
@@ -401,7 +418,7 @@ button:focus {
 
 
 #mu-about {
-  background-color: #635c5c ;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -720,7 +737,7 @@ button:focus {
 
 
 #mu-speakers {
-  background-color: #635c5c ;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -1067,7 +1084,7 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-  background-color: #635c5c;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -1102,7 +1119,7 @@ button:focus {
 /*--------------------*/
 
 #mu-faq {
-  background-color: #635c5c ;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   position: relative;
@@ -1166,7 +1183,7 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-  background-color: #635c5c;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -1294,7 +1311,7 @@ button:focus {
 
 
 #mu-footer {
-  background-color: #474747;
+  background-color: var(--bg-color);
   display: inline;
   float: left;
   width: 100%;
@@ -1335,6 +1352,14 @@ button:focus {
   height: 35px;
   line-height: 35px;
   font-size: 15px;
+}
+
+ .ad-box {
+  text-align: center;
+  background-color: var(--bg-color);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .mu-footer-bottom {
