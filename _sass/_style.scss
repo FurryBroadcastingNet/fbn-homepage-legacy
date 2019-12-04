@@ -28,10 +28,10 @@ Version: 1.0
 
 :root {
   --primary-color: #302AE6;
-  --bg-color-area: #fff
+  --bg-color-area: #fad7f2;
   --secondary-color: #536390;
   --font-color: #424242;
-  --bg-color: #fff;
+  --bg-color: #fff1e3;
   --heading-color: #292922;
 }
 
@@ -59,7 +59,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  color: #1c1b1b;
+  color: #a66797;
 }
 
 ul {
@@ -374,8 +374,12 @@ button:focus {
 
 #mu-hero .navbar-default {
   background-color: var(--bg-color);
-  border-color: #474747;
-  padding: 5px 0;
+    border-bottom-color: #474747;
+    border-bottom: 1px solid;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
 }
 
 .mu-navbar {
@@ -404,6 +408,9 @@ button:focus {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #a66797;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -1336,6 +1343,7 @@ button:focus {
   float: left;
   padding: 10px 0;
   width: 100%;
+  color: #a66797;
 }
 
 .mu-social-media a {
@@ -1352,11 +1360,14 @@ button:focus {
   height: 35px;
   line-height: 35px;
   font-size: 15px;
+  color: #a66797;
 }
 
  .ad-box {
   text-align: center;
   background-color: var(--bg-color);
+    border-top-color: #474747;
+    border-top: 1px solid;
     padding: .5rem;
     display: flex;
     flex-direction: column;
@@ -1377,6 +1388,7 @@ button:focus {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  color: #4d1f42;
 }
 
 
