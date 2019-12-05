@@ -26,6 +26,27 @@ Version: 1.0
 #RESPONSIVE STYLE
 */
 
+:root {
+  --primary-color: #302AE6;
+  --bg-color-area: #fad7f2;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff1e3;
+  --heading-color: #292922;
+  --word-color: #474747;
+  --cp-color: #474747;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #474747;
+  --bg-color-area: #E9E7E7;
+  --heading-color: #818cab;
+  --word-color: #FFFFFF;
+  --cp-color: #F4E6F2
+}
 
 /*--------------------*/
 /* BASIC TYPOGRAPHY */
@@ -42,7 +63,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  color: #1c1b1b;
+
 }
 
 ul {
@@ -75,12 +96,14 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 75px;
+    
 }
 
 
 h1 {
   font-size: 38px;
+    
 }
 
 h2 {
@@ -117,8 +140,8 @@ code {
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #eee;
+  background-color: #474747;
+  border: 1px solid #474747;
   border-radius: 4px;
   padding: 10px;
 }
@@ -356,9 +379,13 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
-  background-color: #fff;
-  border-color: #e7e7e7;
-  padding: 5px 0;
+  background-color: var(--bg-color);
+    border-bottom-color: #474747;
+    border-bottom: 1px solid;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
 }
 
 .mu-navbar {
@@ -377,7 +404,7 @@ button:focus {
 }
 
 .mu-navbar .mu-menu li a {
-  color: #333;
+  color: #fff;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -388,6 +415,22 @@ button:focus {
 .navbar-default .navbar-nav > .active > a:hover {
   color: #fff;
 }
+.navbar-default .navbar-nav > li > a {
+	color: var(--word-color)
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ff8000;
+   
+
+}
+
+ul li {
+	list-style: disc;
+	font-size: 17px;
+	line-height: 1.59;
+	color: var(--word-color)
+}
 
 
 
@@ -397,7 +440,7 @@ button:focus {
 
 
 #mu-about {
-  background-color: #fff;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -716,7 +759,7 @@ button:focus {
 
 
 #mu-speakers {
-  background-color: #fff;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -873,7 +916,7 @@ button:focus {
 }
 
 .mu-single-price {
-  background-color: #f8f8f8;
+  background-color: #474747;
   display: inline;
   float: left;
   text-align: center;
@@ -1063,7 +1106,7 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-  background-color: #fff;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -1098,7 +1141,7 @@ button:focus {
 /*--------------------*/
 
 #mu-faq {
-  background-color: #f8f8f8;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   position: relative;
@@ -1157,13 +1200,12 @@ button:focus {
   margin-right: 5px;
 }
 
-
 /*--------------------*/
 /* CONTACT US */
 /*--------------------*/
 
 #mu-contact {
-  background-color: #f8f8f8;
+  background-color: var(--bg-color-area);
   display: inline;
   float: left;
   width: 100%;
@@ -1291,7 +1333,7 @@ button:focus {
 
 
 #mu-footer {
-  background-color: #f8f8f8;
+  background-color: var(--bg-color);
   display: inline;
   float: left;
   width: 100%;
@@ -1316,6 +1358,7 @@ button:focus {
   float: left;
   padding: 10px 0;
   width: 100%;
+  color: #a66797;
 }
 
 .mu-social-media a {
@@ -1332,6 +1375,17 @@ button:focus {
   height: 35px;
   line-height: 35px;
   font-size: 15px;
+  color: #a66797;
+}
+
+ .ad-box {
+  text-align: center;
+  background-color: var(--bg-color);
+    border-top-color: #474747;
+    border-top: 1px solid;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .mu-footer-bottom {
@@ -1342,6 +1396,7 @@ button:focus {
 
 .mu-copy-right {
   margin-bottom: 0;
+  color: var(--word-color)
 }
 
 .mu-copy-right a {
@@ -1349,6 +1404,7 @@ button:focus {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  color: var(--cp-color)
 }
 
 

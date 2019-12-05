@@ -29,9 +29,48 @@
                    <!---<li><a href="/store/">FBN Store</a></li>--->
                     <li><a href="https://thefurring.com">FBNs WebRing</a></li>
                     <li><a href="https://radio.furrybroadcasting.net/public/paw_print_radio">Paw Print Radio</a></li>
+                    <li><div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                      </label>
+                      <em>Enable Dark Mode!</em>
+                    </div>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+      <em>Enable Dark Mode!</em>
+    </div>
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+        
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+          
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+        
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {        document.documentElement.setAttribute('data-theme', 'light');
+                  localStorage.setItem('theme', 'light');
+            }    
+        }
+        
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
     <!-- End menu -->
 </header>
