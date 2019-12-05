@@ -33,6 +33,8 @@ Version: 1.0
   --font-color: #424242;
   --bg-color: #fff1e3;
   --heading-color: #292922;
+  --word-color: #474747;
+  --cp-color: #474747;
 }
 
 [data-theme="dark"] {
@@ -40,8 +42,10 @@ Version: 1.0
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   --bg-color: #474747;
-  --bg-color-area: #635c5c;
+  --bg-color-area: #E9E7E7;
   --heading-color: #818cab;
+  --word-color: #FFFFFF;
+  --cp-color: #F4E6F2
 }
 
 /*--------------------*/
@@ -59,7 +63,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  color: #a66797;
+
 }
 
 ul {
@@ -92,12 +96,14 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 75px;
+    
 }
 
 
 h1 {
   font-size: 38px;
+    
 }
 
 h2 {
@@ -410,11 +416,20 @@ button:focus {
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #a66797;
+	color: var(--word-color)
 }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #ff8000;
+   
+
+}
+
+ul li {
+	list-style: disc;
+	font-size: 17px;
+	line-height: 1.59;
+	color: var(--word-color)
 }
 
 
@@ -1381,6 +1396,7 @@ button:focus {
 
 .mu-copy-right {
   margin-bottom: 0;
+  color: var(--word-color)
 }
 
 .mu-copy-right a {
@@ -1388,7 +1404,7 @@ button:focus {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  color: #4d1f42;
+  color: var(--cp-color)
 }
 
 
